@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+        <title>Responsive Login Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="user siginBx">
+                    <div class="imgBx"><img src="image/img1.jpg" width="400" height="500"></div>
+                    <div class="formBx">
+                        <form>
+                            <h2>Sign In</h2>
+                            <input type="text" name="" placeholder="Username" />
+                            <input type="password" name="" placeholder="Password" />
+                            <input type="submit" name="" value="Login" />
+                            <p class="signup">Don't have an account yet ? <a href="#" onclick="toggleForm();" >Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user signupBx">
+                    <div class="formBx">
+                        <form>
+                            <h2>Create an Account</h2>
+                            <input type="text" name="" placeholder="Username" />
+                            <input type="email" name="" placeholder="Mail Adress" />
+                            <input type="password" name="" placeholder="Create Password" />
+                            <input type="password" name="" placeholder="Confirm Password" />
+                            <input type="submit" name="" value="Sign Up" />
+                            <p class="signup">Already have an account <a href="#" onclick="toggleForm();">Sign In</a></p>
+                        </form>
+                    </div>
+                    <div class="imgBx"><img src="image/img2.jpg" width="400" height="500"></div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            function toggleForm() {
+                var container = document.querySelector('.container');
+                container.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
