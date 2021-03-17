@@ -8,11 +8,10 @@
 
 }
 
-section
-{
+section {
     position: relative;
     min-height: 100vh;
-    background: #fee648;
+    background: #14171A;
     display: flex;
     justify-content: center;
     align-items: center;
